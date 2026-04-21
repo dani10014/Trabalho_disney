@@ -1,0 +1,8 @@
+$(window).on('load', function() {
+    $(".base-bloco-imagens-canais").slick({
+        slidesToShow: 5.2,
+        slidesToScroll: 4,
+        infinite:false,
+        arrows:false,
+    })
+});

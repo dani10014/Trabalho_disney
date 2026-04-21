@@ -1,0 +1,7 @@
+@use "./cores";
+
+.top-10-hoje-brasil{
+    &__titulo{
+        color:cores.$corTextoPrincipal;
+    }
+}

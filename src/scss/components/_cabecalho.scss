@@ -1,0 +1,29 @@
+.cabecalho{
+    &__btn{
+        border: gray 2px solid;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+            
+            &:hover{
+                background-color: rgb(226, 226, 226);
+                border-color:rgb(226, 226, 226);
+                
+                .cabecalho__link{
+                    color: black;
+                }
+            }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        width: 100%;
+    }
+}

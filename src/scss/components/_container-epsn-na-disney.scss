@@ -1,0 +1,50 @@
+@use "./cores";
+
+.espn-na-disney{
+    height: 100vh;
+    padding-top: 40px;
+    margin-bottom: 80px;
+    .container{
+        margin: 78px;
+    }
+    .base-bloco-imagen{
+        width: 50%;
+        &__img{
+            width: 50%;
+        }
+        &__texto{
+            margin-top: 30px;
+            color:cores.$corTextoMenosRelevante;
+        }
+        &__botao{
+            width: 54%;
+            border: none;
+            text-transform: uppercase;
+            background-color: cores.$corBotoes;
+            transition: 0.3s ease-in-out;
+            padding: 15px;
+            border-radius: 10px;
+        &:hover{
+            background-color: darken(cores.$corBotoes, 15%);
+        }
+        }
+    }
+    .base-bloco-imagens-canais{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+        justify-content: center;
+        &__card{
+            width: 100%;
+            height: 100%;
+            &__img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .base-bloco-imagens-canais .slick-slide {
+        margin: 0 10px; 
+    }
+}

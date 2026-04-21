@@ -1,0 +1,50 @@
+@use "./cores";
+
+.texto-principal{
+    width: 50%;
+    margin-left: 90px;
+
+    .logo{
+        width: 20%;
+
+        &__img{
+            width: 100%;
+        }
+    }
+    &__h2{
+        color: cores.$corTextoPrincipal;
+        margin: 30px 0;
+    }
+    &__texto-sobre-plano{
+        color: cores.$corTextoMenosRelevante;
+        font-size: 1.5rem;
+    }
+    &__texto-sobre-plano-2{
+        font-size: 1.8rem;
+        color: cores.$corTextoPrincipal;
+    }
+    &__titulo-email{
+        color: cores.$corTextoMenosRelevante;
+        margin:30px 0px
+    }
+    .aviso-economia{
+        display: flex;
+        flex-direction:column ;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &__aviso{
+            color: cores.$corTextoMenosRelevante;
+        }
+        &__link-saiba-mais{
+            color: cores.$corTextoPrincipal;
+            text-decoration: underline;
+            &:hover{
+                cursor: pointer;
+            }
+            
+        }
+    }
+    &__img-canais{
+        width: 90%;
+    }
+}
