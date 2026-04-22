@@ -1,8 +1,17 @@
 @use "./cores";
+.banner{
+    background-image: url("../../src/imagens/dois-hmens.webp");
+    background-size: cover; 
+    background-position: center; 
+    height: 110vh; 
+    transition: background-image 0.8s ease-in-out;
+}
 
-.texto-principal{
+.texto-principal{ 
     width: 50%;
+    padding-top: 70px;
     margin-left: 90px;
+    height: 100vh;
 
     .logo{
         width: 20%;

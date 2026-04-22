@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "./cores";
 
 .espaco-email{
@@ -28,7 +29,7 @@
         background-color: cores.$corBotoes;
         transition: 0.3s ease-in-out;
         &:hover{
-            background-color: darken(cores.$corBotoes, 15%);
+            background-color:color.adjust(cores.$corBotoes, $lightness: -10%);
         }
     }
 }

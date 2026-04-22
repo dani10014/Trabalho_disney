@@ -10,6 +10,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased; 
+}
 body{
-    background-color: rgb(0, 0, 0);
+    background-color:#040714;
 }

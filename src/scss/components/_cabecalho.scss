@@ -1,4 +1,10 @@
 .cabecalho{
+    background-color: transparent;
+    position: absolute; /* Posiciona o cabeçalho de forma absoluta */
+    top: 0; /* Alinha ao topo da viewport */
+    left: 0; /* Alinha à esquerda da viewport */
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+    z-index: 10; /* Garante que o cabeçalho fique acima de outros conteúdos */
     &__btn{
         border: gray 2px solid;
         text-transform: uppercase;

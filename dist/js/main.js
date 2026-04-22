@@ -1,1 +1,1 @@
-$(window).on("load",function(){$(".base-bloco-imagens-canais").slick({slidesToShow:5.2,slidesToScroll:4,infinite:!1,arrows:!1})});
+import{iniciarMudancaDeSlide}from"./components/mudanca-de-imagen-principal.js";iniciarMudancaDeSlide(),$(window).on("load",function(){$(".base-bloco-imagens-canais").slick({slidesToShow:5.2,slidesToScroll:4,infinite:!1,arrows:!1}),$(".cards-filmes-top-10").slick({slidesToShow:5,slidesToScroll:1,infinite:!1,arrows:!1})});

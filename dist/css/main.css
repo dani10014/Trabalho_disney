@@ -1,3 +1,12 @@
+@charset "UTF-8";
+.cabecalho {
+  background-color: transparent;
+  position: absolute; /* Posiciona o cabeçalho de forma absoluta */
+  top: 0; /* Alinha ao topo da viewport */
+  left: 0; /* Alinha à esquerda da viewport */
+  width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+  z-index: 10; /* Garante que o cabeçalho fique acima de outros conteúdos */
+}
 .cabecalho__btn {
   border: gray 2px solid;
   text-transform: uppercase;
@@ -23,9 +32,19 @@
   width: 100%;
 }
 
+.banner {
+  background-image: url("../../src/imagens/dois-hmens.webp");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  transition: background-image 0.8s ease-in-out;
+}
+
 .texto-principal {
   width: 50%;
+  padding-top: 70px;
   margin-left: 90px;
+  height: 100vh;
 }
 .texto-principal .logo {
   width: 20%;
@@ -97,13 +116,17 @@
   transition: 0.3s ease-in-out;
 }
 .espaco-email__botao:hover {
-  background-color: rgb(2.0150214592, 154.4849785408, 154.4849785408);
+  background-color: rgb(2.3433476395, 179.6566523605, 179.6566523605);
 }
 
 .espn-na-disney {
   height: 100vh;
   padding-top: 40px;
   margin-bottom: 80px;
+  background-image: url("./../../../src/imagens/futebol.webp");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
 }
 .espn-na-disney .container {
   margin: 78px;
@@ -128,11 +151,11 @@
   border-radius: 10px;
 }
 .espn-na-disney .base-bloco-imagen__botao:hover {
-  background-color: rgb(2.0150214592, 154.4849785408, 154.4849785408);
+  background-color: rgb(2.3433476395, 179.6566523605, 179.6566523605);
 }
 .espn-na-disney .base-bloco-imagens-canais {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 40px;
   margin-right: 40px;
   justify-content: center;
@@ -149,22 +172,33 @@
   margin: 0 10px;
 }
 
+.top-10-hoje-brasil {
+  margin-bottom: 100px;
+}
 .top-10-hoje-brasil__titulo {
   color: rgb(248, 244, 244);
 }
 
 .cards-filmes-top-10 {
-  gap: 10px;
   margin-bottom: 30px;
   margin: 0 90px;
 }
+.cards-filmes-top-10 .slick-track {
+  display: flex !important;
+  gap: 20px;
+}
 .cards-filmes-top-10__card {
-  background-color: #fff;
-  height: 400px;
+  height: 300px;
   width: 100%;
   border-radius: 15px;
-  position: relative;
-  background-color: aqua;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.cards-filmes-top-10__card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 4px solid #fff;
 }
 .cards-filmes-top-10__card__img {
   width: 100%;
@@ -178,6 +212,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #040714;
 }

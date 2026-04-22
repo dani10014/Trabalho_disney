@@ -1,6 +1,7 @@
 @use "./cores";
 
 .top-10-hoje-brasil{
+    margin-bottom: 100px;
     &__titulo{
         color:cores.$corTextoPrincipal;
     }
