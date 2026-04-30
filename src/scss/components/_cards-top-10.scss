@@ -8,6 +8,7 @@
     }
 
     &__card{
+        position: relative;
         height: 300px;
         width: 100%;
         border-radius: 15px;
@@ -24,6 +25,16 @@
             width: 100%;
             height: 100%;
             border-radius: 10px;
+        }
+        &__nome-filme{
+            position: absolute;
+            object-fit: scale-down;
+            padding:0 20px;
+            padding-bottom: 10px;
+            bottom: 0;
+            height: 80px;
+            width: 100%;
+            z-index: 10; 
         }
     }
 }
